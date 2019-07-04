@@ -8,7 +8,7 @@ if [ -z "$HTTP_PROXY" ]; then
   unset HTTP_PROXY
 fi
 
-hostname ${VAGRANTBOX_NAME}.vagrantup.com
+hostname template
 sysrc hostname=$(hostname)
 
 cat >>/etc/fstab <<EOF
